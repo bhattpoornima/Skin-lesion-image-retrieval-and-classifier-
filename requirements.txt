@@ -3,5 +3,5 @@ numpy
 pandas
 Pillow
 matplotlib
-tensorflow
+tensorflow==2.19.0
 gdown
