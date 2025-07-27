@@ -47,3 +47,7 @@ AP: 0.8042
 ## Code
 
 Recruiters and faculty may request access via email.
+
+
+## Dataset / Model Download
+[Download ZIP from Google Drive](https://drive.google.com/file/d/19Cbv_ZDMr1rJIXaWobCe_7_5bfkf4ImY/view?usp=sharing)
