@@ -11,7 +11,18 @@ import matplotlib.pyplot as plt
 st.title("🩺 SkinAI: Disease Detector & Similarity Finder")
 uploaded_file = st.file_uploader("Upload a skin image", type=["jpg", "jpeg", "png"])
 
+# import gdown
+# import zipfile
 
+# Only download if not already present
+if not os.path.exists("HAM10000_metadata.csv"):
+    url = "https://drive.google.com/uc?id=19Cbv_ZDMr1rJIXaWobCe_7_5bfkf4ImY"  # Replace with actual ID
+    output = "data.zip"
+    gdown.download(url, output, quiet=False)
+
+    # Unzip it
+    with zipfile.ZipFile(output, 'r') as zip_ref:
+        zip_ref.extractall()
 
 # Load all necessary files (these must exist in your project folder)
 db_hashes = np.load("hash_codes_binary.npy")
