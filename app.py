@@ -177,7 +177,7 @@ download_and_extract_data()
 # ----------------------------- #
 @st.cache_resource
 def load_keras_model():
-    return load_model("ham10000_model_200epochs.keras")
+    return load_model("ham10000_model_200epochs_resaved.keras")
 
 @st.cache_data
 def load_numpy_data():
